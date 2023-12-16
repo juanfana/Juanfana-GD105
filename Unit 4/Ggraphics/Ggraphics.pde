@@ -1,3 +1,4 @@
+//Declaring variables at the global scope
 PGraphics EraserCannon;
 PImage Broly;
 void setup() {
@@ -7,7 +8,8 @@ void setup() {
 }
 
 void draw() {
-  if((int) frameCount > 1){
+//If loop to try and emulate Enviroment change caused by "eraser cannon"+ Pgraphics setup
+if((int) frameCount > 1){
   background(0,frameCount /2.0 *cos(0) * sin(1)%300,0,200);  
   }
   EraserCannon.beginDraw();
